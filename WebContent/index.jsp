@@ -140,7 +140,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				$("#submitBtn").attr("disabled", "disabled");
 			}
 			var url =  basePath +'generatorServlet.do?' + Math.random();
-			alert(url);
 			$.ajax({
 				type : 'post',
 				url : url,
