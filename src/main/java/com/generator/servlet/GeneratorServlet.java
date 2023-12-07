@@ -216,7 +216,7 @@ public class GeneratorServlet extends HttpServlet {
     
     /** 
      * 执行压缩操作 
-     * @param srcPathName 被压缩的文件/文件�? 
+     * @param srcPathName 被压缩的文件/文件夹
      */  
     public boolean fileToZip(String sourceFilePath, String zipFilePath, String fileName) {    
     	boolean flag = false;
