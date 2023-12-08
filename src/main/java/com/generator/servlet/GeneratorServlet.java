@@ -182,7 +182,7 @@ public class GeneratorServlet extends HttpServlet {
 		//配置数据库属性
 		JDBCConnectionConfiguration jdbcConnectionConfiguration = context.getJdbcConnectionConfiguration();
 		String connection = "jdbc:mysql://" + param.getConnection() + ":" + param.getPort() + "/" + param.getDataBase();
-		jdbcConnectionConfiguration.setConnectionURL(connection);
+		jdbcConnectionConfiguration.setConnectionURL(connection + "?useSSL=false");
 		jdbcConnectionConfiguration.setUserId(param.getUserId());
 		jdbcConnectionConfiguration.setPassword(param.getUserPass());
 		//配置模型的包名
